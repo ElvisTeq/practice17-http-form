@@ -6,3 +6,10 @@
 
 \***\* useEffect() cannot return a promise \*\***
 instead we create another function inside the useEffect() function with async/await
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+## 2 Handling the Loading State
+
+- "AvailableMeals.js"
+  => useState(true/false) => To toggle loading message

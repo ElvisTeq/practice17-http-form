@@ -5,6 +5,7 @@ import classes from "./AvailableMeals.module.css";
 
 const AvailableMeals = () => {
   const [meals, setMeals] = useState([]);
+  const [isLoading, setIsLoading] = useState(true); // Show loading (default true (because it is loading when loading page))
 
   // useEffect() => cannot return a promise, but a function inside can "fetchMeals()"
   // Automatically fetch data at the end of event cycle
@@ -28,12 +29,17 @@ const AvailableMeals = () => {
         });
       }
 
-      // Save meals into "useState"
       setMeals(loadedMeals);
+      setIsLoading(false); // Toggle loading message off
     };
 
     fetchMeals();
   }, []); // No need to fetch data anymore (run only once after page loads)
+
+  // Show loading message if "fetchMeals()" is not finished running
+  if (isLoading) {
+    return <p className={classes.MealsLoading}>Loading...</p>;
+  }
 
   const mealsList = meals.map((meal) => (
     <MealItem
