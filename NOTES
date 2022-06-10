@@ -1,0 +1,8 @@
+## 1 Fetching Data with useEffect()
+
+- "AvailableMeals.js"
+  => Fetching data with useEffect() => So it gets data automatically after page load
+  => Set fetched data with useState() => Then pass the data to JSX
+
+\***\* useEffect() cannot return a promise \*\***
+instead we create another function inside the useEffect() function with async/await
