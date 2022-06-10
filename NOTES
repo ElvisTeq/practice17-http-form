@@ -13,3 +13,13 @@ instead we create another function inside the useEffect() function with async/aw
 
 - "AvailableMeals.js"
   => useState(true/false) => To toggle loading message
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+## 3 Handling Errors
+
+- "AvailableMeals.js"
+  => using (try/catch to handle error, useState() for err.message )
+
+--------------------------------------------- RESPONSE.ok
+Returns (true/false)
