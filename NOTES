@@ -23,3 +23,14 @@ instead we create another function inside the useEffect() function with async/aw
 
 --------------------------------------------- RESPONSE.ok
 Returns (true/false)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+## 4 Adding Checkout Form
+
+- "Checkout.js"
+  => checkout form
+  => added cancel/confirm buttons
+
+- "Cart.js"
+  => Added checkout form (useState(true/false) to show form on button click)
