@@ -43,3 +43,14 @@ Returns (true/false)
   => using useRef() to valdiate form address
   => using useState() to store and validate 4 ref states
   => Manipulating JSX with useState() validations
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+## 6 Submitting & Sending Cart Data
+
+- "Cart.js"
+  => Created "submitOrderHandler()" to fetch "POST" data
+  => Function was passed to <Checkout> as JSX props
+
+- "Checkout.js:
+  => Called "submitOrderHandler()" to pass submitted data into the function

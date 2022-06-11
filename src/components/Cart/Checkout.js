@@ -51,6 +51,14 @@ const Checkout = (props) => {
     if (!formIsValid) {
       return;
     }
+
+    // Passing data to the "submitOrderHandler" in "Cart.js"
+    props.onConfirm({
+      name: enteredName,
+      street: enteredStreet,
+      city: enteredCity,
+      postalCode: enteredPostalCode,
+    });
   };
 
   const nameControlClasses = `${classes.control} ${
