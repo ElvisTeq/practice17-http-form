@@ -34,3 +34,12 @@ Returns (true/false)
 
 - "Cart.js"
   => Added checkout form (useState(true/false) to show form on button click)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+## 5 Handling the Confirm Button (validating Form)
+
+- "Checkout.js"
+  => using useRef() to valdiate form address
+  => using useState() to store and validate 4 ref states
+  => Manipulating JSX with useState() validations
