@@ -54,3 +54,15 @@ Returns (true/false)
 
 - "Checkout.js:
   => Called "submitOrderHandler()" to pass submitted data into the function
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+## 7 Adding Better User Feedback
+
+- "Cart.js"
+  => useState(true/false) to Display different JSX on "submitOrderHandler()"
+
+- "CartProvider.js"
+  => useReducer() To create functionality for "clearCart"
+  => useContext() To save functionality "clearCart"
+  => "clearCart" implemented in "Cart.js"
